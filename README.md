@@ -3,8 +3,6 @@
 ![Overview of UniPlanner](./images/framework.png)
 
 
-## Overview
-
 **UniPlanner** is a task planner that reduces the high latency and computational costs of large language models (LLMs). Instead of using multiple agents for subtask planning and control, it uses a single lightweight LLM to handle everything in one context until the task is complete. This reduces system complexity and avoids the need for communication with cloud servers, lowering latency. UniPlanner performs efficiently on devices like the **Jetson Xavier Orin**, making it ideal for low-resource environments.
 
 ### Features:
@@ -12,6 +10,8 @@
 - Handles task sequences, skill control, and adjustments in **one context**.
 - **No multiple agents, no cloud communication**.
 - Low latency and high efficiency on edge devices like **Jetson Xavier Orin**.
+
+[TOC]
 
 ## Installation
 
