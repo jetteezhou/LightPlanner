@@ -88,6 +88,6 @@ To use UniPlanner, follow these steps:
    ```
 
 ## Other details
-- The definitions of the skill functions mentioned in the machine article are in `. /uniplanner/skill_functions.py`.
-- The implementation of the skills for the robots is in the `. /robot_skills/` directory.
-- The base api for the robot is in the `. /robot_base_api/ `. Theoretically, you can just change the api for any robot, no matter what model you have.
+- The definitions of the skill functions mentioned in the machine article are in `./uniplanner/skill_functions.py`.
+- The implementation of the skills for the robots is in the `./uniplanner/robot_skills/` directory.
+- The base api for the robot is in the `./uniplanner/robot_base_api/ `. Theoretically, you can just change the api for any robot, no matter what model you have.
