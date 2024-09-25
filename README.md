@@ -20,6 +20,7 @@
   - [Quickstart](#quickstart)
   - [Other details](#other-details)
 
+<We will make all the code public and upload the model after the article is published!>
 
 ## Installation
 
