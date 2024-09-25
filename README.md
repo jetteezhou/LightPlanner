@@ -11,7 +11,15 @@
 - **No multiple agents, no cloud communication**.
 - Low latency and high efficiency on edge devices like **Jetson Xavier Orin**.
 
-[TOC]
+
+[UniPlanner: An Efficient and Unified Embodied Task Planner for Edge Devices](#uniplanner-an-efficient-and-unified-embodied-task-planner-for-edge-devices)
+- [UniPlanner: An Efficient and Unified Embodied Task Planner for Edge Devices](#uniplanner-an-efficient-and-unified-embodied-task-planner-for-edge-devices)
+    - [Features:](#features)
+  - [Installation](#installation)
+  - [Before start](#before-start)
+  - [Quickstart](#quickstart)
+  - [Other details](#other-details)
+
 
 ## Installation
 
