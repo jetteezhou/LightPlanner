@@ -15,7 +15,8 @@
 
 ## Installation
 
-(你可以安装在linux pc，如果您需要在Jetson平台上运行，请确保您的Jetson设备已经安装了CUDA和cuDNN，并且已经安装了PyTorch。)
+You can install it on a linux pc, if you need to run it on the Jetson platform, make sure you have CUDA and cuDNN installed on your Jetson device and have PyTorch installed.
+
 To install UniPlanner, follow these steps:
 
 1. Clone the repository:
@@ -31,32 +32,37 @@ To install UniPlanner, follow these steps:
 ## Before start
 ![Overview of UniPlanner](./images/Hardware_and_software.png "Magic Gardens")
 
-**硬件连接**
-- 如果您的机器人是UR + Robotiq（支持所有UR型号），您需要将UR机器人的网线与Jetson(或PC)连接
-- 将Robotiq的USB线插入Jetson(或PC)。
-- 同时Inter相机也需要连接到Jetson(或PC)。
-- 我们的代码中支持的是眼在手上的方式，所以需要将UR机械臂的末端执行器与相机对齐。并且下面的软件设置方式设置好您的机器人的坐标变换矩阵
+**Hardware connection**
+- If your robot is a UR + Robotiq (all UR models are supported), you need to connect the UR robot's network cable to the Jetson (or PC)
+- Plug the Robotiq's USB cable into the Jetson (or PC).
+- The USB of the Inter D435 camera needs to be connected to the USB 3.0 port of the Jetson (or PC).
+- Our code implements the eye-in-hand approach, so the end-effector of the UR robotic arm needs to be aligned with the camera. And set up your robot's coordinate transformation matrix in the software setup way below.
+- Theoretically the code is compatible with the eye-out-of-hand mounting, but it's a good idea to check that the coordinate changes are correct!
 
-**软件设置**
-- 您需要将UR机器人的IP地址设置为192.168.0.1，将Jetson(或PC)的IP地址设置为192.168.0.2（或者您也可以设置成别的，需要保证UR机械臂与主机的网段一致）
-- 查询Robotiq的tty设备号（一般为'/dev/ttyUSB0'）
-- 设置好UR机械臂的末端执行器与相机的坐标变换矩阵，您可以在uniplan.py中19行找到对应的设置
+**Software Settings**
+- You need to set the IP address of the UR robot to 192.168.0.1, and the IP address of the Jetson (or PC) to 192.168.0.2 (or you can set it to something else, you need to make sure that the network segment of the UR robotic arm is the same as the host)
+- Query the Robotiq's tty device number (usually ‘/dev/ttyUSB0’)
+- Set up the coordinate transformation matrix of the end-effector of the UR robot arm and the camera, you can find the corresponding settings in line 19 of uniplan.py.
 ```python
 R_C_to_T = np.eye(3)  # Rotation from camera to tool
 t_C_to_T = np.array([-0.038, -0.065, -0.135])  # Translation from camera to tool
 ```
-- 设置您机器人的Home起始点，这个位置是机械臂的初始位置，您必须尽量保证机械臂末端垂直工作台平面或者平行于工作台平面，您可以在uniplan.py中16行找到对应的设置
+- Set the Home start point of your robot, this is the initial position of the arm, you must try to make sure that the end of the arm is perpendicular to the table plane or parallel to the table plane, you can find the corresponding settings in uniplan.py on line 16
 ```python
-HOME_POSE = [-0.025, -0.32, 0.2, 0, 3.133, 0] # 工作于垂直向下的任务（例如桌面上抓取）
-HOME_POSE_H = [-0.025, -0.48, 0.15, 0, 2.24, -2.16] # 工作于水平操作的任务（例如开关抽屉）
+HOME_POSE = [-0.025, -0.32, 0.2, 0, 3.133, 0] # Work on vertical down tasks (e.g. desktop grabbing)
+HOME_POSE_H = [-0.025, -0.48, 0.15, 0, 2.24, -2.16] # Tasks working in horizontal operation (e.g. opening and closing drawers)
 ```
 
-**检查代码中的设置是否对应**
-- uniplan.py中39行与40行，需要设置成您的UR机械臂的IP地址和Robotiq的tty设备号
+**Check that the settings in the code match**
+- Lines 39 and 40 in uniplan.py need to be set to the IP address of your UR robot arm and the Robotiq tty device number
 ```python
 self.Robot = UR3("192.168.0.1")
 self.Gripper = Robotiq85(MODBUS_PORT='/dev/ttyUSB0', BAUDRATE=115200)
 ```
+
+**Model Download**
+- Download link: 🔗
+- You need to change the model path in line 9 of uniplanner_llm.py to the path of the model you downloaded
 
 ## Quickstart
 
@@ -73,6 +79,6 @@ To use UniPlanner, follow these steps:
    ```
 
 ## Other details
-- 关于机器文章中提到的技能函数的定义在`./uniplanner/skill_functions.py`
-- 关于机器人的技能实现在`./robot_skills/`目录下
-- 关于机器人的基本api在`./robot_base_api/`目录下，理论上无论您是任何型号的机器人，只需要更改其中的api即可
+- The definitions of the skill functions mentioned in the machine article are in `. /uniplanner/skill_functions.py`.
+- The implementation of the skills for the robots is in the `. /robot_skills/` directory.
+- The base api for the robot is in the `. /robot_base_api/ `. Theoretically, you can just change the api for any robot, no matter what model you have.
