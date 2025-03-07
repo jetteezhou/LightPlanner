@@ -6,8 +6,8 @@ import time
 import numpy as np
 import re
 
-from uniplan_callback_v2 import UniPlanner
-from uniplanner.skill_functions import skill_functions
+from lightplanner_callback_v2 import UniPlanner
+from lightplanner.skill_functions import skill_functions
 
 import logging
 logging.getLogger("gradio").setLevel(logging.WARNING)
