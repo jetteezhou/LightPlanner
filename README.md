@@ -12,7 +12,7 @@ LightPlanner Training code follow: [LLaMA-Factory](https://github.com/hiyouga/LL
 
 Model download: [🤗Hugging face link](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B)
 
-![Demo video](https://github.com/unira-zwj/LightPlanner/blob/a2fffe1f67da7d7cdb18e2827307fad31e14ba98/assert/demo.mp4)
+![Demo](assert/demo.gif)
 
 
 ## Installation
