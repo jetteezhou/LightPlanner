@@ -1,6 +1,6 @@
 # LightPlanner: Unleashing the Reasoning Capabilities of Lightweight Large Language Models in Task Planning
 
-![Overview of UniPlanner](./assert/framework.png)
+![Overview of LightPlanner](./assert/framework.png)
 
 ## Supplementary details
 
@@ -14,12 +14,12 @@ LightPlanner Training code follow: [LLaMA-Factory](https://github.com/hiyouga/LL
 
 You can install it on a linux pc, if you need to run it on the Jetson platform, make sure you have CUDA and cuDNN installed on your Jetson device and have PyTorch installed.
 
-To install UniPlanner, follow these steps:
+To install LightPlanner, follow these steps:
 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/unira-zwj/uniplan.git
+   git clone https://github.com/unira-zwj/LightPlanner.git
    ```
 2. Install the required dependencies:
 
@@ -31,7 +31,8 @@ if you use UR robot, you need to install `urx`
 
 ## Before start
 
-![Overview of UniPlanner](./assert/hardware.png "Magic Gardens")
+<div align=center> <img src="./assert/hardware.png" width=60%></div>
+
 
 **Hardware connection**
 
@@ -45,14 +46,14 @@ if you use UR robot, you need to install `urx`
 
 1. You need to set the IP address of the UR robot to 192.168.0.1, and the IP address of the Jetson (or PC) to 192.168.0.2 (or you can set it to something else, you need to make sure that the network segment of the UR robotic arm is the same as the host)
 2. Query the Robotiq's tty device number (usually ‘/dev/ttyUSB0’)
-3. Set up the coordinate transformation matrix of the end-effector of the UR robot arm and the camera, you can find the corresponding settings in line 19 of uniplan.py.
+3. Set up the coordinate transformation matrix of the end-effector of the UR robot arm and the camera, you can find the corresponding settings in line 110 of lightplanner_callback_v2.py.
 
 ```python
 R_C_to_T = np.eye(3)  # Rotation from camera to tool
 t_C_to_T = np.array([-0.038, -0.065, -0.135])  # Translation from camera to tool
 ```
 
-4. Set the Home start point of your robot, this is the initial position of the arm, you must try to make sure that the end of the arm is perpendicular to the table plane or parallel to the table plane, you can find the corresponding settings in uniplan.py on line 16
+4. Set the Home start point of your robot, this is the initial position of the arm, you must try to make sure that the end of the arm is perpendicular to the table plane or parallel to the table plane, you can find the corresponding settings in lightplanner_callback_v2.py on line 106
 
 ```python
 HOME_POSE = [-0.025, -0.32, 0.2, 0, 3.133, 0] # Work on vertical down tasks (e.g. desktop grabbing)
@@ -61,7 +62,7 @@ HOME_POSE_H = [-0.025, -0.48, 0.15, 0, 2.24, -2.16] # Tasks working in horizonta
 
 **Check that the settings in the code match**
 
-1. Lines 39 and 40 in uniplan.py need to be set to the IP address of your UR robot arm and the Robotiq tty device number
+1. Lines 122 in lightplanner_callback_v2.py need to be set to the IP address of your UR robot arm and the Robotiq tty device number
 
 ```python
 self.Robot = UR3("192.168.0.1")
@@ -75,7 +76,7 @@ self.Gripper = Robotiq85(MODBUS_PORT='/dev/ttyUSB0', BAUDRATE=115200)
 
 ## Quickstart
 
-To use UniPlanner, follow these steps:
+To use LightPlanner, follow these steps:
 ```python
 $ uvicorn llm-serve:app --host 0.0.0.0 --port 8000
 $ python web-v2.py
