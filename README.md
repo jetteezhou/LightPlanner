@@ -1,8 +1,12 @@
+<div align=center> <img src="assert/logo.webp" width=50%></div>
+
 <div align="center">
 
 # Welcome to LightPlanner
 
 </div>
+
+
 
 📖 **LightPlanner: Unleashing the Reasoning Capabilities of Lightweight Large Language Models in Task Planning**
 
