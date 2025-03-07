@@ -71,7 +71,7 @@ self.Gripper = Robotiq85(MODBUS_PORT='/dev/ttyUSB0', BAUDRATE=115200)
 
 **Model Download**
 
-- Download link: 🔗
+- Download link: [🤗Hugging face link](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B)
 - You need to move the files of the model to `checkpoints`, or change the model path in line 24 of llm-serve.py to the path of the model you downloaded
 
 ## Quickstart
