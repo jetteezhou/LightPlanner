@@ -1,6 +1,6 @@
 <div align="center">
 
-# Welcome to PhysVLM
+# Welcome to LightPlanner
 
 </div>
 
