@@ -21,7 +21,7 @@ class GenerateResponse(BaseModel):
     response: dict
 
 # 载入模型和分词器
-model_name = "uniplanner-v2-checkpoint"
+model_name = "checkpoints"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
