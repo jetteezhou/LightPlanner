@@ -1,4 +1,4 @@
-<div align=center> <img src="assert/logo.webp" width=50%></div>
+<div align=center> <img src="assert/logo.png" width=50%></div>
 
 <div align="center">
 
@@ -15,6 +15,7 @@
 
 ## Release
 
+- [ ] Paper release [`📕Arxiv`](...).
 - [x] **`2025.03.08`** 🔥Release the Data and the Model at [🤗Hugging face](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B).
 - [x] 🔥Release the LightPlanner code.
 
