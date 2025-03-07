@@ -12,6 +12,11 @@ LightPlanner Training code follow: [LLaMA-Factory](https://github.com/hiyouga/LL
 
 Model download: [🤗Hugging face link](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B)
 
+<video width="480" height="240" controls>
+    <source src="assert/demo.mp4" type="video/mp4">
+</video>
+
+
 ## Installation
 
 You can install it on a linux pc, if you need to run it on the Jetson platform, make sure you have CUDA and cuDNN installed on your Jetson device and have PyTorch installed.
