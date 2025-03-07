@@ -10,6 +10,8 @@ All skill functions used in training dataset in ： `lightplanner/skill_function
 
 LightPlanner Training code follow: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main)
 
+Model download: [🤗Hugging face link](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B)
+
 ## Installation
 
 You can install it on a linux pc, if you need to run it on the Jetson platform, make sure you have CUDA and cuDNN installed on your Jetson device and have PyTorch installed.
