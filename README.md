@@ -1,17 +1,25 @@
-# LightPlanner: Unleashing the Reasoning Capabilities of Lightweight Large Language Models in Task Planning
+<div align="center">
+
+# Welcome to PhysVLM
+
+</div>
+
+📖 **LightPlanner: Unleashing the Reasoning Capabilities of Lightweight Large Language Models in Task Planning**
 
 <!-- ![Overview of LightPlanner](./assert/framework.png) -->
 ![Demo](assert/demo.gif)
 
+## Release
+
+- [x] **`2025.03.08`** 🔥Release the Data and the Model at [🤗Hugging face](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B).
+- [x] 🔥Release the LightPlanner code.
+
 ## Supplementary details
 
-Train dataset (LightPlan-40k) in ： `LighPlan-40k-dataset/lightplan40k-v2.json`
-
-All skill functions used in training dataset in ： `lightplanner/skill_functions.py`
-
-LightPlanner Training code follow: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main)
-
-Model download: [🤗Hugging face link](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B)
+- [x] Train dataset (LightPlan-40k) in ： `LighPlan-40k-dataset/lightplan40k-v2.json`
+- [x] All skill functions used in training dataset in ： `lightplanner/skill_functions.py`
+- [x] LightPlanner Training code follow: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main)
+- [x] Model download: [🤗Hugging face link](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B)
 
 
 ## Installation
