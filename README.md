@@ -16,7 +16,7 @@
 ## Release
 
 - [ ] Paper release [`📕Arxiv`](...).
-- [x] **`2025.03.08`** 🔥Release the Data and the Model at [🤗Hugging face](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B).
+- [x] **`2025.03.08`** 🔥Release the Data and the Model at [🤗Hugging face (Ready)](https://github.com/unira-zwj/LightPlanner).
 - [x] 🔥Release the LightPlanner code.
 
 ## Supplementary details
@@ -24,7 +24,7 @@
 - [x] Train dataset (LightPlan-40k) in ： `LighPlan-40k-dataset/lightplan40k-v2.json`
 - [x] All skill functions used in training dataset in ： `lightplanner/skill_functions.py`
 - [x] LightPlanner Training code follow: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main)
-- [x] Model download: [🤗Hugging face link](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B)
+- [x] Model download: [🤗Hugging face (Ready)](https://github.com/unira-zwj/LightPlanner)
 
 
 ## Installation
@@ -88,7 +88,7 @@ self.Gripper = Robotiq85(MODBUS_PORT='/dev/ttyUSB0', BAUDRATE=115200)
 
 **Model Download**
 
-- Download link: [🤗Hugging face link](https://huggingface.co/elonzhou/LightPlanner-qwen2.5-1.5B)
+- Download link: [🤗Hugging face (Ready)](https://github.com/unira-zwj/LightPlanner)
 - You need to move the files of the model to `checkpoints`, or change the model path in line 24 of llm-serve.py to the path of the model you downloaded
 
 ## Quickstart
