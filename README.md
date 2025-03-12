@@ -15,7 +15,7 @@
 
 ## Release
 
-- [ ] Paper release [`📕Arxiv`](...).
+- [x] **`2025.03.12`** 🔥Paper release at [`📕Arxiv`](https://arxiv.org/abs/2503.08508).
 - [x] **`2025.03.08`** 🔥Release the Data and the Model at [🤗Hugging face](https://huggingface.co/JettZhou/LightPlanner-qwen2.5-1.5B).
 - [x] 🔥Release the LightPlanner code.
 
