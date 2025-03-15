@@ -104,3 +104,17 @@ $ python web-v2.py
 
 - The implementation of the skills for the robots is in the `./lightplanner/robot_skills/` directory.
 - The base api for the robot is in the `./lightplanner/robot_base_api/ `. Theoretically, you can just change the api for any robot, no matter what model you have.
+
+
+## Citation
+If you find LightPlanner useful for your research and applications, please cite using this BibTeX:
+```bibtex
+@misc{zhou2025lightplanne,
+      title={LightPlanner: Unleashing the Reasoning Capabilities of Lightweight Large Language Models in Task Planning}, 
+      author={Weijie Zhou and Yi Peng and Manli Tao and Chaoyang Zhao and Honghui Dong and Ming Tang and Jinqiao Wang},
+      year={2025},
+      eprint={2503.08508},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2503.08508}, 
+}
