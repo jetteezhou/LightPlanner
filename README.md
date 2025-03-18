@@ -15,6 +15,7 @@
 
 ## Release
 
+- [x] **`2025.03.18`** 🔥Release the static quants models of LightPlanner-1.5B at [🤗Hugging face](https://huggingface.co/mradermacher/LightPlanner-qwen2.5-1.5B-GGUF). Model size from 0.9GB to 3.7GB.
 - [x] **`2025.03.12`** 🔥Paper release at [`📕Arxiv`](https://arxiv.org/abs/2503.08508).
 - [x] **`2025.03.08`** 🔥Release the Data and the Model at [🤗Hugging face](https://huggingface.co/JettZhou/LightPlanner-qwen2.5-1.5B).
 - [x] 🔥Release the LightPlanner code.
@@ -105,6 +106,11 @@ $ python web-v2.py
 - The implementation of the skills for the robots is in the `./lightplanner/robot_skills/` directory.
 - The base api for the robot is in the `./lightplanner/robot_base_api/ `. Theoretically, you can just change the api for any robot, no matter what model you have.
 
+## Acknowledgement
+
+- [LLaMA_Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main) provides the training codes.
+- [qwen](https://github.com/QwenLM/Qwen2.5) provides the basic llm model.
+- [mradermacher] (https://huggingface.co/mradermacher/LightPlanner-qwen2.5-1.5B-GGUF) provides the static quants models.
 
 ## Citation
 If you find LightPlanner useful for your research and applications, please cite using this BibTeX:
