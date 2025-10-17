@@ -13,20 +13,21 @@
 <!-- ![Overview of LightPlanner](./assert/framework.png) -->
 ![Demo](assert/demo.gif)
 
-## Conference Poster
-
-<div align=center> <img src="assert/LightPlanner-Poster.pdf" width=60%></div>
-
-**📋 Conference Materials**
-- **Poster PDF**: [LightPlanner-Poster.pdf](assert/LightPlanner-Poster.pdf) - 会议展示海报
-- **Poster Template**: [Poster.pptx](assert/Poster.pptx) - PowerPoint模板文件
-
 ## Release
 
 - [x] **`2025.03.18`** 🔥Release the static quants models of LightPlanner-1.5B at [🤗Hugging face](https://huggingface.co/mradermacher/LightPlanner-qwen2.5-1.5B-GGUF). Model size from 0.9GB to 3.7GB.
 - [x] **`2025.03.12`** 🔥Paper release at [`📕Arxiv`](https://arxiv.org/abs/2503.08508).
 - [x] **`2025.03.08`** 🔥Release the Data and the Model at [🤗Hugging face](https://huggingface.co/JettZhou/LightPlanner-qwen2.5-1.5B).
 - [x] 🔥Release the LightPlanner code.
+
+## Conference Poster
+
+<div align=center> <img src="assert/Poster.png" width=60%></div>
+
+**📋 Conference Materials**
+- **Poster PDF**: [LightPlanner-Poster.pdf](assert/LightPlanner-Poster.pdf) - 会议展示海报
+- **Poster Template**: [Poster.pptx](assert/Poster.pptx) - PowerPoint模板文件
+
 
 ## Supplementary details
 
