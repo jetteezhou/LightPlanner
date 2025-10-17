@@ -22,7 +22,7 @@
 
 ## Conference Poster
 
-<div align=center> <img src="assert/Poster.png" width=60%></div>
+<div align=center> <img src="assert/Poster.png" width=40%></div>
 
 **📋 Conference Materials**
 - **Poster PDF**: [LightPlanner-Poster.pdf](assert/LightPlanner-Poster.pdf) - 会议展示海报
